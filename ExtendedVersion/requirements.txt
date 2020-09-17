@@ -1,0 +1,8 @@
+numpy
+pandas
+nltk
+bs4
+wget
+sklearn
+#torch
+matplotlib
