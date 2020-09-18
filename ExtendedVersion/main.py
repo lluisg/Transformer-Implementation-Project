@@ -234,7 +234,8 @@ def guess_word(custom_sentence):
 
 # MAIN -------------------------------------------------------------------------
 # --------------------------------------------------------------------------
-def main(DATA):
+def main(DATA, MAX_LINES, MAX_PADDING, MIN_LEN_SENTENCE, SIZE_VOCAB, SHOW_SENTENCES, LR, EPOCHS):
+
     if DATA == 'europarl':
         URLS=["http://www.statmt.org/europarl/v10/training-monolingual/europarl-v10.es.tsv.gz"]
         FILES = ["europarl-v10.es.tsv.gz"]
@@ -329,7 +330,6 @@ def main(DATA):
 
     print('Reduced File') #--------------------------------------------------------
     sys.stdout.flush()
-    MAX_LINES = 2000000
 
     with open('corpus.es', 'rb') as cfile:
       with open('corpus.reduced.es', 'wb') as rfile:
@@ -359,11 +359,8 @@ def main(DATA):
     print(sentence_to_words(data[50]))
     sys.stdout.flush()
 
-    MAX_PADDING = 35
-    MIN_LEN_SENTENCE = 5
     preprocessed_data = []
     perc = 0
-    SHOW_SENTENCES = 100000
 
     for ind, s in enumerate(data):
       words = sentence_to_words(s)
@@ -383,7 +380,6 @@ def main(DATA):
     print('Build Dictionary') #---------------------------------------------------
     sys.stdout.flush()
 
-    SIZE_VOCAB = 20000
     FED = 20 #nmber of elements we will show
     word_dict, complete_dict = build_dict(preprocessed_data, SIZE_VOCAB)
     list_dict = [key for key in word_dict.keys()]
@@ -465,10 +461,7 @@ def main(DATA):
 
 
     # Training ------------------------------------------------------------------
-
     BATCH_SIZE = 128
-    EPOCHS = 50
-
     d_model = 256
     heads = 8
     N = 6
@@ -506,7 +499,7 @@ def main(DATA):
     print('Define Loss and Optimizer')
     sys.stdout.flush()
     loss_function = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(model.parameters(), lr=0.001, betas=(0.9, 0.98), eps=1e-9)
+    optimizer = optim.Adam(model.parameters(), lr=LR, betas=(0.9, 0.98), eps=1e-9)
 
     mask_sample_ds = None
     train_torch_x = None
@@ -553,4 +546,14 @@ def main(DATA):
 if __name__ == "__main__":
     # DATA = 'europarl'
     DATA = 'newscarl'
-    main(DATA)
+
+    MAX_LINES = 2000000 #number of total lines used from the files
+    MAX_PADDING = 35 #max length of the sentences allowed
+    MIN_LEN_SENTENCE = 5 #min length of the sentences allowed
+    SIZE_VOCAB = 20000 #size of the vocabulary used
+    SHOW_SENTENCES = 100000 #increase of sentences to show when preprocessing
+
+    LR = 0.001 #learning rate for training the model
+    EPOCHS = 50 #number of epochs in training
+
+    main(DATA, MAX_LINES, MAX_PADDING, MIN_LEN_SENTENCE, SIZE_VOCAB, SHOW_SENTENCES, LR, EPOCHS)
