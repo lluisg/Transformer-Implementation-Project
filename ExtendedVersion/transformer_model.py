@@ -2,7 +2,6 @@ import torch
 import torch.optim as optim
 import torch.nn as nn
 import torch.nn.functional as F
-
 from torch.autograd import Variable
 
 import math
@@ -91,11 +90,8 @@ class MultiHeadAttention(nn.Module):
 def attention(q, k, v, d_k, mask=None, dropout=None):
     scores = torch.matmul(q, k.transpose(-2, -1)) /  math.sqrt(d_k)
 
-    # print(np.shape(mask))
-    # print(np.shape(scores))
     if mask is not None:
         mask = mask.unsqueeze(1)
-        # print(np.shape(mask))
         scores = scores.masked_fill(mask == 0, -1e9)
         scores = F.softmax(scores, dim=-1)
 
@@ -225,12 +221,7 @@ class Transformer(nn.Module):
     def forward(self, src, trg, src_mask, trg_mask):
         e_outputs = self.encoder(src, src_mask)
         d_output = self.decoder(trg, e_outputs, src_mask, trg_mask)
-        # print(np.shape(d_output))
-        # print(np.shape(d_output[:, -1, :]))
+
         output = self.out(d_output)
-        # print(np.shape(output))
-        # print(np.shape(output[:, -1, :]))
-        # print('eeee')
+
         return output
-# we don't perform softmax on the output as this will be handled
-# automatically by our loss function
