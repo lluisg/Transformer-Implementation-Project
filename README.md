@@ -34,7 +34,7 @@ For the data, I used the monolingual Spanish sets given by WMT20 for the transla
 The results obtained were of:
 
 | Version | Epochs | Learning Rate | Training Loss | Valid Loss | Test Loss |
-| ------ | ------ | ------ |  ------ | ------ |
+| ------ | ------ | ------ | ------ |  ------ | ------ |
 | Colab | 30 | 0.001| 2.76 |  11.63 | 1.61 |
 | Extended(Europarl) | 50 | 0.001 | 3.19 | 4.94 | 0.66 |
 | Extended(Newscarl) | 80 | 0.001 | 4.58 | 14.48 | 1.92 | 
