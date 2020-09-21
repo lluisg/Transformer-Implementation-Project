@@ -1,0 +1,135 @@
+File download
+http://www.statmt.org/europarl/v10/training-monolingual/europarl-v10.es.tsv.gz
+Unzipping europarl-v10.es.tsv.gz
+europarl-v10.es.tsv.gz
+Join all into one
+Joining file: europarl-v10.es.tsv
+Delete auxiliar files
+Reduced File
+Number of lines in the reduced file: 2000000
+Read Data
+Preprocessing the Data
+b'Gracias, se\xc3\xb1or Chatel.\tep-08-09-02-010.txt\t010\t210\tPresidente\t\t\n'
+['gracia', 'or', 'chatel', 'ep', '08', '09', '02', '010', 'txt', '010', '210', 'president']
+0/2000000 sentences preprocessed
+100000/2000000 sentences preprocessed
+200000/2000000 sentences preprocessed
+300000/2000000 sentences preprocessed
+400000/2000000 sentences preprocessed
+500000/2000000 sentences preprocessed
+600000/2000000 sentences preprocessed
+700000/2000000 sentences preprocessed
+800000/2000000 sentences preprocessed
+900000/2000000 sentences preprocessed
+1000000/2000000 sentences preprocessed
+1100000/2000000 sentences preprocessed
+1200000/2000000 sentences preprocessed
+1300000/2000000 sentences preprocessed
+1400000/2000000 sentences preprocessed
+1500000/2000000 sentences preprocessed
+1600000/2000000 sentences preprocessed
+1700000/2000000 sentences preprocessed
+1800000/2000000 sentences preprocessed
+1900000/2000000 sentences preprocessed
+Length data readed:  2000000
+Length after preprocessing:  1750595
+['ltimo', 'forma', 'subyacent', 'esfuerzo', 'debemo', 'reforzar', 'mercado', 'interior', 'ep', '08', '09', '02', '010', 'txt', '010', '213', 'vivian', 'rede']
+Build Dictionary
+First 20 elements of the dictionary: ['ep', 'txt', 'n', '10', '03', 's', '09', '11', '05', '02', '1', '01', '04', '06', '07', '12', 'ppe', 'comisi', 'm', '08']
+Selected 20000/94975 words
+Convert and Pad
+[ 195  129 5791  319  117  904  120  424    3   22    9   12   77    4
+   77 2461 1480  437    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1] 18
+Extract Word
+0 of the 1750595 sentences were only 2's
+[ 195    0 5791  319  117  904  120  424    3   22    9   12   77    4
+   77 2461 1480  437    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1]
+129
+Split Train, Valid and Test
+train:  1312946 1312946 1312946
+valid:  262589 262589 262589
+test:  175060 175060 175060
+Cleaning Variables
+cuda
+Preparing Input Masks
+Preparing Train Data Loaders
+Preparing Validation Data Loaders
+Initialize Model
+Define Loss and Optimizer
+Going to train
+Start training
+Epoch: 1, Loss: 5.578470944428588
+Epoch: 2, Loss: 4.974436362716138
+Epoch: 3, Loss: 4.707077769118458
+Epoch: 4, Loss: 4.510280858868394
+Epoch: 5, Loss: 4.359912176326507
+Eval Loss: 4.461732767014011
+Epoch: 6, Loss: 4.275363519215449
+Epoch: 7, Loss: 4.21077446057611
+Epoch: 8, Loss: 4.162022747219969
+Epoch: 9, Loss: 4.12637655856805
+Epoch: 10, Loss: 4.086608046303717
+Eval Loss: 4.376048252596493
+Epoch: 11, Loss: 4.018230891013894
+Epoch: 12, Loss: 3.9572299343959982
+Epoch: 13, Loss: 3.911700880185836
+Epoch: 14, Loss: 3.8801577740139512
+Epoch: 15, Loss: 3.8434409783769246
+Eval Loss: 4.375270696178979
+Epoch: 16, Loss: 3.803303531490355
+Epoch: 17, Loss: 3.7565499820261117
+Epoch: 18, Loss: 3.7297302545174493
+Epoch: 19, Loss: 3.7043711343316406
+Epoch: 20, Loss: 3.684405821600163
+Eval Loss: 4.443542518810919
+Epoch: 21, Loss: 3.6650780411951023
+Epoch: 22, Loss: 3.6450311624415788
+Epoch: 23, Loss: 3.648552803436342
+Epoch: 24, Loss: 3.63316933164868
+Epoch: 25, Loss: 3.606028451652735
+Eval Loss: 4.534966436626851
+Epoch: 26, Loss: 3.5779569396430646
+Epoch: 27, Loss: 3.54274494530839
+Epoch: 28, Loss: 3.519073109548676
+Epoch: 29, Loss: 3.490201353376013
+Epoch: 30, Loss: 3.483966415192003
+Eval Loss: 4.645469840390873
+Epoch: 31, Loss: 3.482712707049574
+Epoch: 32, Loss: 3.4726287442054122
+Epoch: 33, Loss: 3.4570967686248353
+Epoch: 34, Loss: 3.4438199404039493
+Epoch: 35, Loss: 3.4420813084415673
+Eval Loss: 4.717553344734928
+Epoch: 36, Loss: 3.4112946604120498
+Epoch: 37, Loss: 3.397557132005645
+Epoch: 38, Loss: 3.379168786693907
+Epoch: 39, Loss: 3.3488024159652907
+Epoch: 40, Loss: 3.3384805063123846
+Eval Loss: 4.803586434434961
+Epoch: 41, Loss: 3.335414863278885
+Epoch: 42, Loss: 3.3239378012349254
+Epoch: 43, Loss: 3.3116289012309843
+Epoch: 44, Loss: 3.3002357056880465
+Epoch: 45, Loss: 3.280821927018183
+Eval Loss: 4.906241587379522
+Epoch: 46, Loss: 3.252700547036383
+Epoch: 47, Loss: 3.2478289446372415
+Epoch: 48, Loss: 3.230510797642853
+Epoch: 49, Loss: 3.2051263740941733
+Epoch: 50, Loss: 3.1899430565630444
+Eval Loss: 4.944372778166572
+Preparing Input Masks
+Preparing Data Loaders
+Going to test
+Start evaluating
+0.6633785364804015
+Initial Sentence: 	 Ha habido una XXX en Colombia durant la presentación del presidente
+Word Guessed: 		 pregunta
+Initial Sentence: 	 Todas las tropas han sido XXX a America
+Word Guessed: 		 txt
+Initial Sentence: 	 Estaba pensando que quizas XXX deberías hacerlo
+Word Guessed: 		 manera
+Initial Sentence: 	 Todo lo que llevo esta dentro de mí XXX
+Word Guessed: 		 txt

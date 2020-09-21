@@ -1,0 +1,220 @@
+File download
+http://data.statmt.org/news-crawl/es/news.2007.es.shuffled.deduped.gz
+File already downloaded
+http://data.statmt.org/news-crawl/es/news.2008.es.shuffled.deduped.gz
+File already downloaded
+http://data.statmt.org/news-crawl/es/news.2009.es.shuffled.deduped.gz
+File already downloaded
+http://data.statmt.org/news-crawl/es/news.2010.es.shuffled.deduped.gz
+File already downloaded
+http://data.statmt.org/news-crawl/es/news.2011.es.shuffled.deduped.gz
+File already downloaded
+http://data.statmt.org/news-crawl/es/news.2012.es.shuffled.deduped.gz
+File already downloaded
+http://data.statmt.org/news-crawl/es/news.2013.es.shuffled.deduped.gz
+File already downloaded
+http://data.statmt.org/news-crawl/es/news.2014.es.shuffled.deduped.gz
+File already downloaded
+http://data.statmt.org/news-crawl/es/news.2015.es.shuffled.deduped.gz
+File already downloaded
+http://data.statmt.org/news-crawl/es/news.2016.es.shuffled.deduped.gz
+File already downloaded
+http://data.statmt.org/news-crawl/es/news.2017.es.shuffled.deduped.gz
+File already downloaded
+http://data.statmt.org/news-crawl/es/news.2018.es.shuffled.deduped.gz
+File already downloaded
+http://data.statmt.org/news-crawl/es/news.2019.es.shuffled.deduped.gz
+File already downloaded
+Unzipping news.2019.es.shuffled.deduped.gz
+news.2007.es.shuffled.deduped.gz
+news.2008.es.shuffled.deduped.gz
+news.2009.es.shuffled.deduped.gz
+news.2010.es.shuffled.deduped.gz
+news.2011.es.shuffled.deduped.gz
+news.2012.es.shuffled.deduped.gz
+news.2013.es.shuffled.deduped.gz
+news.2014.es.shuffled.deduped.gz
+news.2015.es.shuffled.deduped.gz
+news.2016.es.shuffled.deduped.gz
+news.2017.es.shuffled.deduped.gz
+news.2018.es.shuffled.deduped.gz
+news.2019.es.shuffled.deduped.gz
+Join all into one
+Joining file: news.2007.es.shuffled.deduped
+Joining file: news.2008.es.shuffled.deduped
+Joining file: news.2009.es.shuffled.deduped
+Joining file: news.2010.es.shuffled.deduped
+Joining file: news.2011.es.shuffled.deduped
+Joining file: news.2012.es.shuffled.deduped
+Joining file: news.2013.es.shuffled.deduped
+Joining file: news.2014.es.shuffled.deduped
+Joining file: news.2015.es.shuffled.deduped
+Joining file: news.2016.es.shuffled.deduped
+Joining file: news.2017.es.shuffled.deduped
+Joining file: news.2018.es.shuffled.deduped
+Joining file: news.2019.es.shuffled.deduped
+Delete auxiliar files
+Reduced File
+Number of lines in the reduced file: 2000000
+Read Data
+Preprocessing the Data
+b'Y este final de a\xc3\xb1o ha venido marcado por dos hitos significativos en el campo de los universos paralelos.\n'
+['final', 'venido', 'marcado', 'do', 'hito', 'significativo', 'campo', 'universo', 'paralelo']
+0/2000000 sentences preprocessed
+100000/2000000 sentences preprocessed
+200000/2000000 sentences preprocessed
+300000/2000000 sentences preprocessed
+400000/2000000 sentences preprocessed
+500000/2000000 sentences preprocessed
+600000/2000000 sentences preprocessed
+700000/2000000 sentences preprocessed
+800000/2000000 sentences preprocessed
+900000/2000000 sentences preprocessed
+1000000/2000000 sentences preprocessed
+1100000/2000000 sentences preprocessed
+1200000/2000000 sentences preprocessed
+1300000/2000000 sentences preprocessed
+1400000/2000000 sentences preprocessed
+1500000/2000000 sentences preprocessed
+1600000/2000000 sentences preprocessed
+1700000/2000000 sentences preprocessed
+1800000/2000000 sentences preprocessed
+1900000/2000000 sentences preprocessed
+Length data readed:  2000000
+Length after preprocessing:  1716177
+['all', 'quedo', 'pasto', 'buitr', 'perro', 'vagabundo', 'dem', 's', 'animal', 'carro', 'ero']
+Build Dictionary
+First 20 elements of the dictionary: ['n', 's', 'm', 'as', 'est', 'd', 'espa', 'ser', 'do', 'tambi', 'millon', 'l', 'si', 'euro', 'seg', 'p', 'ayer', 'c', 'gobierno', 'part']
+Selected 20000/224962 words
+Convert and Pad
+[  295 12214 14872     2  3481     2   531     4  2648  7209   683     1
+     1     1     1     1     1     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1     1     1     1     1] 11
+Extract Word
+28 of the 1716177 sentences were only 2's
+[  295 12214 14872     2  3481     2   531     4     0  7209   683     1
+     1     1     1     1     1     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1     1     1     1     1]
+2648
+Split Train, Valid and Test
+train:  1287111 1287111 1287111
+valid:  257422 257422 257422
+test:  171616 171616 171616
+Cleaning Variables
+cuda
+Preparing Input Masks
+Preparing Train Data Loaders
+Preparing Validation Data Loaders
+Initialize Model
+Define Loss and Optimizer
+Going to train
+Start training
+Epoch: 1, Loss: 8.431312913020262
+Epoch: 2, Loss: 8.119815738502721
+Epoch: 3, Loss: 7.7928772440199445
+Epoch: 4, Loss: 7.614813225271214
+Epoch: 5, Loss: 7.5005107245088665
+Eval Loss: 8.301785724063517
+Epoch: 6, Loss: 7.415174403025597
+Epoch: 7, Loss: 7.34019249132349
+Epoch: 8, Loss: 7.269897429973432
+Epoch: 9, Loss: 7.202570194133996
+Epoch: 10, Loss: 7.136680186695775
+Eval Loss: 8.424231697740423
+Epoch: 11, Loss: 7.07114680935299
+Epoch: 12, Loss: 7.005709735192092
+Epoch: 13, Loss: 6.940434109055057
+Epoch: 14, Loss: 6.875403714587789
+Epoch: 15, Loss: 6.812977581386445
+Eval Loss: 8.676341476307712
+Epoch: 16, Loss: 6.747294473856711
+Epoch: 17, Loss: 6.685510872277174
+Epoch: 18, Loss: 6.6240016738384035
+Epoch: 19, Loss: 6.559449256651916
+Epoch: 20, Loss: 6.4956257956883405
+Eval Loss: 9.04521099734259
+Epoch: 21, Loss: 6.4314528788093925
+Epoch: 22, Loss: 6.367232686959284
+Epoch: 23, Loss: 6.302474005078169
+Epoch: 24, Loss: 6.241543262936145
+Epoch: 25, Loss: 6.18281236440299
+Eval Loss: 9.442375173388609
+Epoch: 26, Loss: 6.12781056882658
+Epoch: 27, Loss: 6.073283128256635
+Epoch: 28, Loss: 6.019068830527289
+Epoch: 29, Loss: 5.9669663950670495
+Epoch: 30, Loss: 5.915866293267968
+Eval Loss: 9.927060777339973
+Epoch: 31, Loss: 5.869074874675359
+Epoch: 32, Loss: 5.8208768376776785
+Epoch: 33, Loss: 5.776533499443066
+Epoch: 34, Loss: 5.731890163823737
+Epoch: 35, Loss: 5.690711623586732
+Eval Loss: 10.405479341093637
+Epoch: 36, Loss: 5.649798401120929
+Epoch: 37, Loss: 5.6098782411148935
+Epoch: 38, Loss: 5.574655295177026
+Epoch: 39, Loss: 5.53100540544082
+Epoch: 40, Loss: 5.498620258358232
+Eval Loss: 10.992252377819115
+Epoch: 41, Loss: 5.463348292744909
+Epoch: 42, Loss: 5.430461620184383
+Epoch: 43, Loss: 5.398651786569385
+Epoch: 44, Loss: 5.363230016085489
+Epoch: 45, Loss: 5.332025143677219
+Eval Loss: 11.326081528578316
+Epoch: 46, Loss: 5.302806046621707
+Epoch: 47, Loss: 5.269513494027637
+Epoch: 48, Loss: 5.2400000181668505
+Epoch: 49, Loss: 5.211950583076705
+Epoch: 50, Loss: 5.186966989304969
+Eval Loss: 11.799328815865943
+Epoch: 51, Loss: 5.158354200962146
+Epoch: 52, Loss: 5.1332356141689
+Epoch: 53, Loss: 5.110549074700643
+Epoch: 54, Loss: 5.086518632910416
+Epoch: 55, Loss: 5.061586736779224
+Eval Loss: 12.295170981651745
+Epoch: 56, Loss: 5.03766593962979
+Epoch: 57, Loss: 5.011747231109804
+Epoch: 58, Loss: 4.989599273474139
+Epoch: 59, Loss: 4.969038037833659
+Epoch: 60, Loss: 4.94153767952202
+Eval Loss: 12.657526429557421
+Epoch: 61, Loss: 4.924508630043946
+Epoch: 62, Loss: 4.901953807854899
+Epoch: 63, Loss: 4.881384567078277
+Epoch: 64, Loss: 4.858798250828647
+Epoch: 65, Loss: 4.842445160390464
+Eval Loss: 13.25590235433332
+Epoch: 66, Loss: 4.818302032913399
+Epoch: 67, Loss: 4.803657835475395
+Epoch: 68, Loss: 4.784429558895843
+Epoch: 69, Loss: 4.765384942198331
+Epoch: 70, Loss: 4.7482981416281955
+Eval Loss: 13.640213111759891
+Epoch: 71, Loss: 4.731272680828661
+Epoch: 72, Loss: 4.712566153364895
+Epoch: 73, Loss: 4.697937155656617
+Epoch: 74, Loss: 4.6782284827107175
+Epoch: 75, Loss: 4.666653629608731
+Eval Loss: 14.153919663154344
+Epoch: 76, Loss: 4.644848563956569
+Epoch: 77, Loss: 4.634539084199315
+Epoch: 78, Loss: 4.615175728131213
+Epoch: 79, Loss: 4.606658296729234
+Epoch: 80, Loss: 4.586892806971557
+Eval Loss: 14.48623370745073
+Preparing Input Masks
+Preparing Data Loaders
+Going to test
+Start evaluating
+1.9269848225509352
+Initial Sentence: 	 Ha habido una XXX en Colombia durant la presentación del presidente
+Word Guessed: 		 gobierno
+Initial Sentence: 	 Todas las tropas han sido XXX a America
+Word Guessed: 		 s
+Initial Sentence: 	 Estaba pensando que quizas XXX deberías hacerlo
+Word Guessed: 		 s
+Initial Sentence: 	 Todo lo que llevo esta dentro de mí XXX
+Word Guessed: 		 s

@@ -25,19 +25,21 @@ For the data, I used the monolingual Spanish sets given by WMT20 for the transla
 
 | Version | Total Sentences | After Preprocessing | Train | Valid | Test | #words vocabulary | Total words |
 | ------ | ------ | ------ |  ------ | ------ | ------ | ------ | ------ |
-| Colab | 10.000 | 8.395 |  6.294 | 1.259 | 840 | 5.000 | 20.827 |
-| Extended | 2.000.000 | |
+| Colab | 10.000 | 8.393 |  6.294 | 1.259 | 840 | 5.000 | 20.827 |
+| Extended(Europarl) | 2.000.000 | 1.750.595 | 1.312.946 | 262.589 | 175.060 | 20.000 | 94.975 |
+| Extended(Newscarl) | 2.000.000 | 1.716.149 | 1.287.111 | 257.422 | 171.616 |  20.000 | 224.962 |
 
 ### Results
 
 The results obtained were of:
 
-| Version | Epochs | Training Loss | Valid Loss | Test Loss |
+| Version | Epochs | Learning Rate | Training Loss | Valid Loss | Test Loss |
 | ------ | ------ | ------ |  ------ | ------ |
-| Colab | 30 | 2.76 |  11.63 | 1.61 |
-| Extended | 50 | |
+| Colab | 30 | 0.001| 2.76 |  11.63 | 1.61 |
+| Extended(Europarl) | 50 | 0.001 | 3.19 | 4.94 | 0.66 |
+| Extended(Newscarl) | 80 | 0.001 | 4.58 | 14.48 | 1.92 | 
 
 The loss was computed using Cross Entropy Loss between the last state of the result given by the Transformer and it's supposed value.
 
-It was a little strange because in the reduced version, the validation loss increased from the very beginning despite the training loss decreasing on all epochs, I suppose it was provoked for the fact that the list of sentences is not as large as it should be, taking into account that it has to learn a 5.000 vocabulary with 8.000 sentences only.
+It was a little strange because the validation loss increased from the very beginning despite the training loss decreasing on all epochs. Despite that the best results were obtained using the Europarl dataset, which probably contains a more mesured set of data.
 
